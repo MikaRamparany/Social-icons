@@ -2,28 +2,43 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family:"Quick" ;
+    src: url(/font/Quick.ttf)format(Truetype);
+}
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: rgb(209, 209, 209);
 }
 
+h1{
+    font-family:"Quick" ;
+}
+
+p{
+    font-family:"Quick" ;
+}
 .container{
     display: flex;
     
     align-items: center;
     justify-content:center;
     height: 100%;
-    gap: 10px;
+    gap: 23px;
 }
 
 .social-icon{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     border-radius: 12px;
+    filter: grayscale(1);
+    transition:ease-in-out 0.6s;
 }
 
 .social-icon i {
@@ -33,10 +48,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+#name{
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    transition: 0.9s ;
+    
+}
 /* le back color des sections icons*/ 
 
-.facebook { 
+.facebook{ 
     background: #3b5998; 
 }
 .twitter { 
@@ -45,4 +66,38 @@ body {
 .instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
 .whatsapp {background: #25D366;
+}
+.youtube { background:#FD1D1D;
+}
+
+.facebook p { 
+    color: #3b5998; 
+    font-size: 12px;
+}
+.twitter p { 
+    color: #00acee; 
+    font-size: 12px;
+}
+.instagram p { 
+    color: #c1356b;
+    font-size: 12px;
+}
+.whatsapp p { 
+    color: #25D366; 
+    font-size: 12px;
+}
+.youtube p { 
+    color: #FD1D1D; 
+    font-size: 12px;
+}
+
+/* transitions */
+
+.social-icon:hover {
+    filter: grayscale(0);
+    border-radius: 50%;
+}
+.social-icon:hover #name {
+    transform: translateY(-75px);
+    opacity: 1;
 }
