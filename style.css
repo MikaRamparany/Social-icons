@@ -16,6 +16,9 @@ body {
 h1{
     font-family:"Quick" ;
     font-weight:900;
+    transform: translateX(-600px);
+    animation: apparition 1.75s 1.3S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
+    transition: all 0.9s ;
 }
 
 p{
@@ -102,4 +105,10 @@ p{
 .social-icon:hover #name {
     transform: translateY(-75px);
     opacity: 1;
+}
+
+@keyframes apparition {
+    100%{
+    opacity: 1;
+    transform : none;}
 }
