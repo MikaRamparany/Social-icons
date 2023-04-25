@@ -16,8 +16,8 @@ body {
 h1{
     font-family:"Horelios Semi-Bold" ;
     font-weight:900;
-    transform: translateX(-600px);
-    animation: apparition 1.75s 1.3S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
+    transform: translateX(-700px);
+    animation: apparition 1.65s 2S ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
     transition: all 0.9s ;
 }
 
@@ -45,6 +45,9 @@ p{
     border-radius: 12px;
     filter: grayscale(1);
     transition:ease-in-out 0.6s;
+    transform: translateX(-1300px);
+    animation: apparition 1.75s 1.5s ease-out forwards ; /*forwards pour garder les valeurs de fin, sinon la boucle continued */
+    transition: all 0.9s ;
 }
 
 .social-icon i {
