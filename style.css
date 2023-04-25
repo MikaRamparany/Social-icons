@@ -15,10 +15,12 @@ body {
 
 h1{
     font-family:"Quick" ;
+    font-weight:900;
 }
 
 p{
     font-family:"Quick" ;
+    font-weight: 900;
 }
 .container{
     display: flex;
@@ -72,23 +74,23 @@ p{
 
 .facebook p { 
     color: #3b5998; 
-    font-size: 12px;
+    
 }
 .twitter p { 
     color: #00acee; 
-    font-size: 12px;
+    
 }
 .instagram p { 
     color: #c1356b;
-    font-size: 12px;
+    
 }
 .whatsapp p { 
     color: #25D366; 
-    font-size: 12px;
+    
 }
 .youtube p { 
     color: #FD1D1D; 
-    font-size: 12px;
+    
 }
 
 /* transitions */
